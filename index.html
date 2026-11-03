@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3B0D1C">
+<meta name="description" content="Tem uma cartinha em cada envelope. Abre com carinho.">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<!-- Pré-visualização ao compartilhar o link (WhatsApp, Instagram etc.).
+     Troque SEU-USUARIO pelo seu usuário do GitHub. -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Quando estiver triste ♥">
+<meta property="og:description" content="Tem uma cartinha em cada envelope. Abre com carinho.">
+<meta property="og:url" content="https://SEU-USUARIO.github.io/quando-estiver-triste/">
+<meta property="og:image" content="https://SEU-USUARIO.github.io/quando-estiver-triste/preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💌</text></svg>">
+<title>Quando estiver triste ♥</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Caveat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<section id="capa">
+  <p class="capa-sub">uma carta chegou pra você</p>
+  <button class="grande" id="envGrande" aria-label="Abrir a carta">
+    <span class="corpo"></span>
+    <span class="bilhete">para o meu amor</span>
+    <span class="lado"></span>
+    <span class="aba"></span>
+    <span class="selo"><span class="selo-cera"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.2 0 3.6 1.2 5.3 3 1.7-1.8 3.1-3 5.3-3 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z"/></svg></span></span>
+  </button>
+  <h1>Quando estiver triste</h1>
+  <p class="dica">toque no envelope para abrir</p>
+</section>
+
+<main id="cartas" aria-labelledby="titulo">
+  <header class="cab">
+    <h1 id="titulo">Quando estiver triste</h1>
+    <p>escolhe um envelope, lê devagar e lembra o quanto você é amada</p>
+    <p class="progresso" id="progresso"></p>
+  </header>
+  <div class="grade" id="grade"></div>
+  <footer class="rodape">
+    com todo o meu amor ♥
+    <br><button class="voltar" id="fecharTudo">guardar as cartinhas</button>
+  </footer>
+</main>
+
+<div class="veu" id="veu" role="dialog" aria-modal="true" aria-labelledby="cartaPara">
+  <article class="papel" id="papel">
+    <button class="fechar" id="fechar" aria-label="Fechar carta">×</button>
+    <p class="para" id="cartaPara">Meu amor,</p>
+    <p class="texto" id="cartaTexto"></p>
+    <p class="assin">com amor, seu ♥</p>
+    <div class="nav">
+      <button id="ant" aria-label="Carta anterior">anterior</button>
+      <span id="contador"></span>
+      <button id="prox" aria-label="Próxima carta">próxima</button>
+    </div>
+  </article>
+</div>
+
+<script src="js/cartas.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
